@@ -1,0 +1,15 @@
+{
+	"name": "PHP",
+	"image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ikappas.composer"
+			]
+		}
+	},
+	"forwardPorts": [
+		8080
+	],
+	"postCreateCommand": "if [ -f composer.json ];then composer install;fi"
+}
